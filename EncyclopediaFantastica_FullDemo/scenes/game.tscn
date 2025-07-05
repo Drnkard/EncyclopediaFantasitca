@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[node name="Game" type="Node2D"]
+[node name="PlayerUnit" parent="." instance=ExtResource(1)]
+[node name="EnemyUnit" parent="." instance=ExtResource(2)]
+[node name="TurnManager" type="Node" parent="."]
+script = "res://scripts/turn_manager.gd"
+[node name="Grid" type="Node2D" parent="."]
+script = "res://scripts/grid.gd"
+[node name="WeaponSelector" type="Control" parent="."]
+script = "res://scripts/weapon_selector.gd"
